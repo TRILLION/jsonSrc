@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<!-- saved from url=(0016)http://localhost -->
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>整体技术架构</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #content-info{
+            width: auto;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #author-info{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        #title{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            padding-top: 10px;
+            margin-bottom: 2px;
+            font-size: 34px;
+            color: #505050;
+        }
+        .text{
+            white-space:nowrap;
+            text-overflow: ellipsis;
+            display: inline-block;
+            margin-right: 20px;
+            margin-bottom: 2px;
+            font-size: 20px;
+            color: #8c8c8c;
+        }
+        #navBar{
+            width: auto;
+            height: auto;
+            position: fixed;
+            right:0;
+            bottom: 0;
+            background-color: #f0f3f4;
+            overflow-y: auto;
+            text-align: center;
+        }
+        #svg-container{
+            width: 100%;
+            overflow-x: scroll;
+            min-width: 0px;
+            margin: 0 10px;
+        }
+        #nav-thumbs{
+            overflow-y: scroll;
+            padding: 0 5px;
+        }
+        .nav-thumb{
+            position: relative;
+            margin: 10px auto;
+        }
+        .nav-thumb >p{
+            text-align: center;
+            font-size: 12px;
+            margin: 4px 0 0 0;
+        }
+        .nav-thumb >div{
+            position: relative;
+            display: inline-block;
+            border: 1px solid #c6cfd5;
+        }
+        .nav-thumb img{
+            display: block;
+        }
+        #main-content{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #d0cfd8;
+            display: flex;
+            height: auto;
+            flex-flow: row wrap;
+            text-align:center;
+        }
+        #svg-container >svg{
+            display: block;
+            margin:10px auto;
+            margin-bottom: 0;
+        }
+        #copyright{
+            bottom: 0;
+            left: 50%;
+            margin: 5px auto;
+            font-size: 16px;
+            color: #515151;
+        }
+        #copyright >a{
+            text-decoration: none;
+            color: #77C;
+        }
+        .number{
+            position: absolute;
+            top:0;
+            left:0;
+            border-top:22px solid #08a1ef;
+            border-right: 22px solid transparent;
+        }
+        .pagenum{
+            font-size: 12px;
+            color: #fff;
+            position: absolute;
+            top: -23px;
+            left: 2px;
+        }
+            #navBar::-webkit-scrollbar{
+            width: 8px;
+            background-color: #f5f5f5;
+        }
+            #navBar::-webkit-scrollbar-track{
+            -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.3);
+            border-radius: 8px;
+            background-color: #fff;
+        }
+            #navBar::-webkit-scrollbar-thumb{
+            border-radius: 8px;
+            -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.3);
+            background-color: #6b6b70;
+        }
+        #navBar::-webkit-scrollbar-thumb:hover{
+            background-color: #4a4a4f;
+        }
+</style>
+  </head>
+  <body>
+    <div id="main-area">
+      <div id="content-info">
+        <div id="content-info">
+          <div id="title">整体技术架构</div>
+        </div>
+        <div id="author-info">
+          <div class="text" id="author-name">nobody</div>
+          <div class="text" id="share-time">2018-03-31</div>
+        </div>
+      </div>
+      <div id="main-content">
+        <div id="svg-container"><svg xmlns:ev="http://www.w3.org/2001/xml-events" height="596" ed:name="Page-1" xmlns="http://www.w3.org/2000/svg" ed:vSpacing="30" viewBox="0 0 888 596" xmlns:xlink="http://www.w3.org/1999/xlink" ed:hSpacing="30" id="page1" width="888" xmlns:ed="http://www.edrawsoft.cn/xml/2017/SVGExtensions/" preserveAspectRadio="xMinYMin meet">
+    <style type="text/css"><![CDATA[
+g[ed\:togtopicid],g[ed\:hyperlink],g[ed\:comment],g[ed\:note] {cursor:pointer;}
+g[id] {-moz-user-select: none;-ms-user-select: none;user-select: none;}
+svg text::selection,svg tspan::selection{background-color: #4285f4;color: #ffffff;fill: #ffffff;}
+.st10 {fill:#ffffff;font-family:Apple LiSung Light;font-size:11pt}
+.st12 {fill:#ffffff;font-family:Apple LiSung Light;font-size:14pt}
+.st11 {fill:#ffffff;font-family:Apple LiSung Light;font-size:9pt}
+]]></style>
+    <defs>
+        <linearGradient y1="0%" y2="100%" x1="0%" x2="0%" id="lg4">
+            <stop offset="0" stop-color="#ffffff"/>
+            <stop offset="0.25" stop-color="#f0f5f0"/>
+            <stop offset="0.75" stop-color="#e1ebe1"/>
+            <stop offset="1" stop-color="#c8d7c8"/>
+        </linearGradient>
+    </defs>
+    <rect height="596" x="0" y="0" fill="#1e242f" width="888"/>
+    <g transform="translate(374,195.65)" ed:parentid="101" ed:height="38" id="102" ed:width="65">
+        <path stroke-linejoin="round" d="M0,0L65,0L65,38L0,38L0,0z" fill="none" stroke="#e38d76"/>
+        <path transform="translate(-71,60.73)" stroke-linejoin="round" d="M-10.5,11.7C12.8,-12.2,32.1,-41.7,71,-41.7" fill="none" stroke="#e38d76" id="103" stroke-linecap="round"/>
+        <text class="st10">
+            <tspan lengthAdjust="spacing" x="22" y="24.5" textLength="22" style="white-space:pre">后端</tspan>
+        </text>
+    </g>
+    <g transform="translate(374,308.3)" ed:parentid="101" ed:height="38" id="104" ed:width="65">
+        <path stroke-linejoin="round" d="M0,0L65,0L65,38L0,38L0,0z" fill="none" stroke="#70bdf2"/>
+        <path transform="translate(-71,4.4)" stroke-linejoin="round" d="M8,1.5C28,8.3,47.4,14.6,71,14.6" fill="none" stroke="#70bdf2" id="105" stroke-linecap="round"/>
+        <text class="st10">
+            <tspan lengthAdjust="spacing" x="22" y="24.5" textLength="22" style="white-space:pre">前端</tspan>
+        </text>
+    </g>
+    <g transform="translate(374,391.75)" ed:parentid="101" ed:height="38" id="106" ed:width="76">
+        <path stroke-linejoin="round" d="M0,0L76,0L76,38L0,38L0,0z" fill="none" stroke="#e0a7d3"/>
+        <path transform="translate(-71,-37.32)" stroke-linejoin="round" d="M-18.8,-26.3C6.7,7,22.7,56.3,71,56.3" fill="none" stroke="#e0a7d3" id="107" stroke-linecap="round"/>
+        <text class="st10">
+            <tspan lengthAdjust="spacing" x="22" y="24.5" textLength="33" style="white-space:pre">客户端</tspan>
+        </text>
+    </g>
+    <g transform="translate(468,151)" ed:parentid="102" ed:height="18.5" id="108" ed:width="206">
+        <path transform="translate(-14.5,41.08)" stroke-linejoin="round" d="M-14.5,22.6L2.6,22.6L2.6,-16.6C2.6,-19.9,5.3,-22.6,8.6,-22.6L14.5,-22.6" fill="none" stroke="#e38d76" id="109" stroke-linecap="round"/>
+        <path stroke-linejoin="round" d="M0,18.5L206,18.5" fill="none" stroke="#e38d76"/>
+        <text class="st11">
+            <tspan lengthAdjust="spacing" x="4" y="13.8" textLength="198" style="white-space:pre">用户系统：管理用户信息，负责注册，登录等功能</tspan>
+        </text>
+    </g>
+    <g transform="translate(468,178.2)" ed:parentid="102" ed:height="18.5" id="110" ed:width="188">
+        <path transform="translate(-14.5,27.47)" stroke-linejoin="round" d="M-14.5,9L2.6,9L2.6,-3C2.6,-6.3,5.3,-9,8.6,-9L14.5,-9" fill="none" stroke="#e38d76" id="111" stroke-linecap="round"/>
+        <path stroke-linejoin="round" d="M0,18.5L188,18.5" fill="none" stroke="#e38d76"/>
+        <text class="st11">
+            <tspan lengthAdjust="spacing" x="4" y="13.8" textLength="180" style="white-space:pre">信息管理：相关信息录入，采集，删除等功能</tspan>
+        </text>
+    </g>
+    <g transform="translate(468,205.4)" ed:parentid="102" ed:height="18.5" id="112" ed:width="215">
+        <path transform="translate(-14.5,13.88)" stroke-linejoin="round" d="M-14.5,-4.6L2.6,-4.6L2.6,-1.4C2.6,1.9,5.3,4.6,8.6,4.6L14.5,4.6" fill="none" stroke="#e38d76" id="113" stroke-linecap="round"/>
+        <path stroke-linejoin="round" d="M0,18.5L215,18.5" fill="none" stroke="#e38d76"/>
+        <text class="st11">
+            <tspan lengthAdjust="spacing" x="4" y="13.8" textLength="207" style="white-space:pre">检索系统：专利信息分类、检索、标签化、比对功能</tspan>
+        </text>
+    </g>
+    <g transform="translate(468,232.6)" ed:parentid="102" ed:height="18.5" id="114" ed:width="269">
+        <path transform="translate(-14.5,0.27)" stroke-linejoin="round" d="M-14.5,-18.2L2.6,-18.2L2.6,12.2C2.6,15.5,5.3,18.2,8.6,18.2L14.5,18.2" fill="none" stroke="#e38d76" id="115" stroke-linecap="round"/>
+        <path stroke-linejoin="round" d="M0,18.5L269,18.5" fill="none" stroke="#e38d76"/>
+        <text class="st11">
+            <tspan lengthAdjust="spacing" x="4" y="13.8" textLength="261" style="white-space:pre">社区系统：运营平台，行业信息交流（预计模块，但依赖度较高）</tspan>
+        </text>
+    </g>
+    <g transform="translate(468,259.8)" ed:parentid="102" ed:height="18.5" id="116" ed:width="207">
+        <path transform="translate(-14.5,-13.33)" stroke-linejoin="round" d="M-14.5,-31.8L2.6,-31.8L2.6,25.8C2.6,29.1,5.3,31.8,8.6,31.8L14.5,31.8" fill="none" stroke="#e38d76" id="117" stroke-linecap="round"/>
+        <path stroke-linejoin="round" d="M0,18.5L207,18.5" fill="none" stroke="#e38d76"/>
+        <text class="st11">
+            <tspan lengthAdjust="spacing" x="4" y="13.8" textLength="199" style="white-space:pre">IM通讯：即时通讯模块（预计模块，看实用价</tspan>
+            <tspan x="4" y="26.8" style="white-space:pre">值）</tspan>
+        </text>
+    </g>
+    <g transform="translate(468,318.05)" ed:parentid="104" ed:height="18.5" id="118" ed:width="215">
+        <path transform="translate(-14.5,13.88)" stroke-linejoin="round" d="M-14.5,-4.6L2.6,-4.6L2.6,-1.4C2.6,1.9,5.3,4.6,8.6,4.6L14.5,4.6" fill="none" stroke="#70bdf2" id="119" stroke-linecap="round"/>
+        <path stroke-linejoin="round" d="M0,18.5L215,18.5" fill="none" stroke="#70bdf2"/>
+        <text class="st11">
+            <tspan lengthAdjust="spacing" x="4" y="13.8" textLength="207" style="white-space:pre">接口定制：接口定制、规划、对接、调试、请求检测</tspan>
+        </text>
+    </g>
+    <g transform="translate(479,376.3)" ed:parentid="106" ed:height="18.5" id="120" ed:width="35">
+        <path transform="translate(-14.5,26.47)" stroke-linejoin="round" d="M-14.5,8L2.6,8L2.6,-2C2.6,-5.3,5.3,-8,8.6,-8L14.5,-8" fill="none" stroke="#e0a7d3" id="121" stroke-linecap="round"/>
+        <path stroke-linejoin="round" d="M0,18.5L35,18.5" fill="none" stroke="#e0a7d3"/>
+        <text class="st11">
+            <tspan lengthAdjust="spacing" x="4" y="13.8" textLength="27" style="white-space:pre">web</tspan>
+            <tspan x="4" y="26.8" style="white-space:pre">端</tspan>
+        </text>
+    </g>
+    <g transform="translate(479,403.5)" ed:parentid="106" ed:height="16.5" id="122" ed:width="22">
+        <path transform="translate(-14.5,11.88)" stroke-linejoin="round" d="M-14.5,-4.6L2.6,-4.6L2.6,-1.4C2.6,1.9,5.3,4.6,8.6,4.6L14.5,4.6" fill="none" stroke="#e0a7d3" id="123" stroke-linecap="round"/>
+        <path stroke-linejoin="round" d="M0,16.5L22,16.5" fill="none" stroke="#e0a7d3"/>
+        <text class="st11">
+            <tspan lengthAdjust="spacing" x="4" y="11.8" textLength="14" style="white-space:pre">iO</tspan>
+            <tspan x="4" y="22.8" style="white-space:pre">S</tspan>
+        </text>
+    </g>
+    <g transform="translate(479,428.7)" ed:parentid="106" ed:height="16.5" id="124" ed:width="43">
+        <path transform="translate(-14.5,-0.73)" stroke-linejoin="round" d="M-14.5,-17.2L2.6,-17.2L2.6,11.2C2.6,14.5,5.3,17.2,8.6,17.2L14.5,17.2" fill="none" stroke="#e0a7d3" id="125" stroke-linecap="round"/>
+        <path stroke-linejoin="round" d="M0,16.5L43,16.5" fill="none" stroke="#e0a7d3"/>
+        <text class="st11">
+            <tspan lengthAdjust="spacing" x="4" y="11.8" textLength="35" style="white-space:pre">Androi</tspan>
+            <tspan x="4" y="22.8" style="white-space:pre">d</tspan>
+        </text>
+    </g>
+    <g transform="translate(153,268.1)" ed:topictype="mainidea" ed:layout="rightmap" ed:height="60" id="101" ed:width="158">
+        <path stroke-linejoin="round" d="M0,0L158,0L158,60L0,60L0,0z" stroke-width="3" fill="none" stroke="#50bec1"/>
+        <text class="st12">
+            <tspan lengthAdjust="spacing" x="34" y="36.5" textLength="105" style="white-space:pre">ipersee主体架</tspan>
+            <tspan x="73" y="56.5" style="white-space:pre">构</tspan>
+        </text>
+    </g>
+    <g transform="translate(312,292.1)" ed:togtopicid="101">
+        <use xlink:href="#minus"/>
+    </g>
+    <g transform="translate(440,208.65)" ed:togtopicid="102">
+        <use xlink:href="#minus"/>
+    </g>
+    <g transform="translate(440,321.3)" ed:togtopicid="104">
+        <use xlink:href="#minus"/>
+    </g>
+    <g transform="translate(451,404.75)" ed:togtopicid="106">
+        <use xlink:href="#minus"/>
+    </g>
+    <symbol id="plus">
+        <path d="M11,6C11,8.8,8.8,11,6,11C3.2,11,1,8.8,1,6C1,3.2,3.2,1,6,1C8.8,1,11,3.2,11,6z" fill="url(#lg4)"/>
+        <path d="M11,6C11,8.8,8.8,11,6,11C3.2,11,1,8.8,1,6C1,3.2,3.2,1,6,1C8.8,1,11,3.2,11,6zM3,6L9,6M6,3L6,9" fill="none" stroke="#46a000"/>
+    </symbol>
+    <symbol id="minus">
+        <path d="M11,6C11,8.8,8.8,11,6,11C3.2,11,1,8.8,1,6C1,3.2,3.2,1,6,1C8.8,1,11,3.2,11,6z" fill="url(#lg4)"/>
+        <path d="M11,6C11,8.8,8.8,11,6,11C3.2,11,1,8.8,1,6C1,3.2,3.2,1,6,1C8.8,1,11,3.2,11,6zM3,6L9,6" fill="none" stroke="#46a000"/>
+    </symbol>
+</svg>
+</div>
+        <div id="copyright">Created With  <a href="https://www.edrawsoft.com/" target="_blank" title="edrawsoft">MindMaster</a></div>
+      </div>
+    </div>
+    <script>
+                const svgs=document.getElementById("svg-container").children;
+                const ua=window.navigator.userAgent.indexOf('rv:11')>=0?true:false;
+                const svgcount=document.getElementById('svg-container').childElementCount;
+                let styleArr=[];
+                let navBar=document.getElementById('navBar');
+                let conInfo=document.getElementById('content-info');
+                for(let i=0;i<svgcount;i++){
+                    styleArr[i] = {width:svgs[i].getAttribute('width'),height:svgs[i].getAttribute('height')}
+                }
+                window.onresize=function () {
+                    renavstyle();
+                    resvgstyle();
+                };
+                window.onscroll=renavstyle;
+                window.onload=function () {
+                    renavstyle();
+                    resvgstyle();
+                    let sideWidth=navBar.offsetWidth;
+                    document.getElementById('content-info').style.marginRight=sideWidth+'px';
+                    document.getElementById('main-content').style.marginRight=sideWidth+'px';
+                };
+                function resvgstyle() {
+                    let sideWidth=navBar.offsetWidth+20;
+                    for(let i=0;i<svgcount;i++){
+                        let oriWidth = styleArr[i].width;
+                        let oriHeight = styleArr[i].height;
+                        let percent = oriHeight / oriWidth;
+                        let innerWidth=document.body.offsetWidth-sideWidth;
+                        if (innerWidth <= oriWidth) {
+                            svgs[i].removeAttribute('width');
+                            svgs[i].removeAttribute('height');
+                            if (ua) {
+                                svgs[i].setAttribute('height',innerWidth*percent);
+                            }
+                        }else {
+                            svgs[i].setAttribute('width', oriWidth);
+                            svgs[i].setAttribute('height', oriHeight);
+                        }
+                    }
+                    let topHeight=conInfo.clientHeight;
+                    let svgHeight=0;
+                    for(let i=0;i<svgcount;i++){
+                        svgHeight+=svgs[i].offsetHeight||svgs[i].clientHeight;
+                    }
+                let fullHeight=svgHeight+Number(topHeight);
+ if(fullHeight<window.innerHeight){
+                document.getElementById('copyright').style.position='absolute';
+                document.getElementById('copyright').style.transform ='translateX(-50%)';
+                document.getElementById('main-content').style.position='absolute';
+                document.getElementById('main-content').style.top=topHeight+'px';
+                }else{
+                document.getElementById('copyright').style.position='';
+                document.getElementById('copyright').style.transform ='';
+                document.getElementById('main-content').style.position='';
+    }
+}
+                function renavstyle() {
+                let topHeight=conInfo.clientHeight;
+                let scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+                if(scrollTop>topHeight){
+                document.getElementById('navBar').style.top=0+'px';
+                }else{
+                    document.getElementById('navBar').style.top=topHeight-scrollTop+'px';
+                }
+                }
+</script>
+  </body>
+</html>
